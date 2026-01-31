@@ -1,0 +1,5 @@
+:root {
+  --main-color: #0d6efd;
+  --bg-color: #f4f6f8;
+  --card-color: #ffffff;
+}

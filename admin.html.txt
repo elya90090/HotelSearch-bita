@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>پنل ادمین</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>پنل مدیریت هتل</h1>
+</header>
+
+<form class="admin-form">
+  <input placeholder="کد اختصاصی هتل">
+  <input placeholder="نام هتل">
+
+  <select>
+    <option>هتل</option>
+    <option>هتل آپارتمان</option>
+    <option>مهمان‌پذیر</option>
+  </select>
+
+  <input placeholder="شهر">
+  <input placeholder="تعداد ستاره">
+  <input placeholder="قیمت">
+
+  <textarea placeholder="خدمات هتل"></textarea>
+  <textarea placeholder="توضیحات"></textarea>
+
+  <input placeholder="آدرس">
+  <input placeholder="شماره تماس">
+  <input placeholder="شماره همراه">
+
+  <input placeholder="نام مدیریت">
+  <input placeholder="مدیر رزرواسیون">
+
+  <input placeholder="تاریخ ثبت (شمسی)">
+
+  <button>ثبت هتل</button>
+</form>
+
+</body>
+</html>

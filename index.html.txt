@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>جستجوگر هتل</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="theme.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <h1>جستجوگر هتل</h1>
+</header>
+
+<section class="search-box">
+  <input id="searchName" placeholder="نام هتل">
+  <input id="searchCity" placeholder="شهر">
+
+  <select id="searchType">
+    <option value="">نوع اقامت</option>
+    <option value="hotel">هتل</option>
+    <option value="apartment">هتل آپارتمان</option>
+  </select>
+
+  <select id="searchStars">
+    <option value="">ستاره</option>
+    <option value="5">5 ⭐</option>
+    <option value="4">4 ⭐</option>
+    <option value="3">3 ⭐</option>
+  </select>
+
+  <button onclick="searchHotels()">جستجو</button>
+</section>
+
+<section id="hotelList" class="hotel-list"></section>
+
+</body>
+</html>
