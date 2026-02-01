@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <title>جستجوگر هتل</title>
+  <meta charset="UTF-8" />
+  <title>HotelSearch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="theme.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
 
-<header class="header">
-  <h1>جستجوگر هتل</h1>
+<header class="topbar">
+  <h1>HotelSearch</h1>
+  <p>جستجوی هتل و هتل آپارتمان</p>
 </header>
 
-<section class="search-box">
-  <input id="searchName" placeholder="نام هتل">
-  <input id="searchCity" placeholder="شهر">
+<section class="search-panel">
+  <input id="name" placeholder="نام هتل">
+  <input id="city" placeholder="شهر">
 
-  <select id="searchType">
+  <select id="type">
     <option value="">نوع اقامت</option>
-    <option value="hotel">هتل</option>
-    <option value="apartment">هتل آپارتمان</option>
+    <option value="هتل">هتل</option>
+    <option value="هتل آپارتمان">هتل آپارتمان</option>
   </select>
 
-  <select id="searchStars">
+  <select id="stars">
     <option value="">ستاره</option>
     <option value="5">5 ⭐</option>
     <option value="4">4 ⭐</option>
     <option value="3">3 ⭐</option>
   </select>
 
-  <button onclick="searchHotels()">جستجو</button>
+  <button onclick="search()">جستجو</button>
 </section>
 
-<section id="hotelList" class="hotel-list"></section>
+<section id="results" class="cards"></section>
 
+<script src="script.js"></script>
 </body>
 </html>
